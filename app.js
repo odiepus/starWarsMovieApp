@@ -9,8 +9,13 @@ app.set('view engine', 'ejs');  //using express we set the view eng to ejs
 //order matters!!! if the not found is top route then it take precedence
 
 //home
-app.get('/', function(req, res) {         // '/' get the req'ed file from root folder and res's 
-  res.render('home'); //by default it knows to look in views and it also knows its and ejs view
+//with express we can pass info to a template, to override a setting or fill in a var
+//by default it knows to look in views and it also knows its and ejs view
+app.get('/', function(req, res) {         //when a req comes in for '/' then this app.get() will respond
+  res.render('home', {
+    title : "Star Wars Movies",   //pass in the test for title tag to template
+    movies : ["1st movie", "2nd movie", "3rd movie"]
+  }); 
 });
 
 //star wars episode server
