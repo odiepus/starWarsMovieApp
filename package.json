@@ -1,0 +1,22 @@
+{
+  "name": "starwarsmovieapp",
+  "version": "1.0.0",
+  "description": "learning expressjs nodejs with movie app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/odiepus/starWarsMovieApp.git"
+  },
+  "author": "Hector Herrera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/odiepus/starWarsMovieApp/issues"
+  },
+  "homepage": "https://github.com/odiepus/starWarsMovieApp#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
