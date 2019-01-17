@@ -13,8 +13,7 @@ app.set('view engine', 'ejs');  //using express we set the view eng to ejs
 //by default it knows to look in views and it also knows its and ejs view
 app.get('/', function(req, res) {         //when a req comes in for '/' then this app.get() will respond
   res.render('home', {
-    title : "Star Wars Movies",   //pass in the test for title tag to template
-    movies : ["1st movie", "2nd movie", "3rd movie"]
+    title : "Star Wars Movies"   //pass in the test for title tag to template
   }); 
 });
 
