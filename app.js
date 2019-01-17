@@ -2,13 +2,15 @@ var express = require("express"); //object to use express features
 
 var app = express(); //object for use in app with express features
 
+app.set('view engine', 'ejs');  //using express we set the view eng to ejs
+
 //Routes
 //this app serves the web side with whatever it requests.
 //order matters!!! if the not found is top route then it take precedence
 
 //home
 app.get('/', function(req, res) {         // '/' get the req'ed file from root folder and res's 
-  res.send("This is a server response");  //this app.get is for a specific req; the '/' req
+  res.render('home'); //by default it knows to look in views and it also knows its and ejs view
 });
 
 //star wars episode server
